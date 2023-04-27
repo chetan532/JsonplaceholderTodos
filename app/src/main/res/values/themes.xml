@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+    <style name="Theme.JsonplaceholderTodos" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_900</item>
+        <item name="colorPrimaryVariant">@color/purple_900</item>
+        <item name="colorOnPrimary">@color/purple_100</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <!-- Customize your theme here. -->
+        <item name="colorSurface">@color/purple_100</item>
+        <item name="colorOnSurface">@color/purple_800</item>
+        <item name="bottomSheetDialogTheme">@style/Base.ThemeOverlay.JsonplaceholderTodos.BottomSheetDialog
+        </item>
+    </style>
+
+    <style name="Theme.App.Splash" parent="Theme.SplashScreen">
+        // Set the splash screen background, animated icon, and animation duration.
+        <item name="windowSplashScreenBackground">@color/purple_900</item>
+
+        // Use windowSplashScreenAnimatedIcon to add either a drawable or an
+        // animated drawable. One of these is required.
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="windowSplashScreenAnimationDuration">2000</item>
+        # Required for animated icons
+
+        // Set the theme of the Activity that directly follows your splash screen.
+        <item name="postSplashScreenTheme">@style/Theme.JsonplaceholderTodos</item>
+        # Required.
+    </style>
+
+    <style name="Base.ThemeOverlay.JsonplaceholderTodos.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/sheet_background</item>
+    </style>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="purple_900">#0C0032</color>
+    <color name="purple_800">#110043</color>
+    <color name="purple_700">#1B006D</color>
+    <color name="purple_500">#23008F</color>
+    <color name="purple_300">#8962FF</color>
+    <color name="purple_200">#CAB8FF</color>
+    <color name="purple_100">#E7E0FF</color>
+
+    <color name="shimmer_color">#8C8C8C</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="toolbar">#35AD4F</color>
+
+    <color name="colorPending">#FCB4AF</color>
+    <color name="colorCompleted">#B9FFBC</color>
+</resources>
